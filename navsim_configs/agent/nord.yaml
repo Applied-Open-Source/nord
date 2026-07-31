@@ -1,0 +1,25 @@
+# NoRD Hydra agent config for NAVSIM evaluation.
+#
+# Usage (from within your navsim repo):
+#   python navsim/planning/script/run_pdm_score.py \
+#       ++agent=nord \
+#       # (vocab_path is optional; bundled by default)
+#       ++train_test_split=navtest \
+#       ++output_dir=results/nord
+#
+# Make this config discoverable by adding to your hydra searchpath:
+#   hydra:
+#     searchpath:
+#       - file:///path/to/nord-release/navsim_configs
+#
+# The model served by vLLM is determined by which checkpoint you launch:
+#   vllm serve <nord-or-nord-base-checkpoint-dir> --served-model-name qwen --port 8000
+
+_target_: nord.navsim_agent.NordNavsimAgent
+_convert_: 'all'
+
+# vocab_path: defaults to bundled nord/data/vocab.pkl; override with ++agent.vocab_path=... if needed
+server_url: "http://localhost:8000/v1"
+temperature: 1.0      # Paper evaluation temperature
+use_guided_decoding: true
+seed: 42

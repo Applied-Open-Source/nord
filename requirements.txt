@@ -1,0 +1,13 @@
+# Core inference
+torch>=2.0.1
+numpy>=1.23
+Pillow>=9.0
+requests>=2.28.0
+huggingface_hub>=0.24.0
+
+# Model serving (required to run the vLLM server)
+vllm>=0.4.0
+transformers>=4.45.0
+
+# Optional: visualization examples
+# matplotlib>=3.7.0

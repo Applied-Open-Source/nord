@@ -1,0 +1,13 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+.eggs/
+# *.pkl  # removed — vocab.pkl in nord/data/ is intentionally tracked
+*.pt
+*.safetensors
+.env
+.venv
+venv/
+*.log
