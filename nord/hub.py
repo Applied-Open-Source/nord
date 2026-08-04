@@ -24,11 +24,11 @@ BUNDLED_VOCAB = Path(__file__).parent / "data" / "vocab.pkl"
 
 NORD_MODELS: dict[str, dict[str, str]] = {
     "nord": {
-        "hf_repo": "nord-vla-ai/nord",
+        "hf_repo": "AppliedIntuitionResearch/nord",
         "description": "NoRD: Dr. GRPO fine-tuned (paper's main result)",
     },
     "nord-base": {
-        "hf_repo": "nord-vla-ai/nord-base",
+        "hf_repo": "AppliedIntuitionResearch/nord-base",
         "description": "NoRD-Base: SFT-only trained (ablation baseline)",
     },
 }

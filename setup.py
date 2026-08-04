@@ -17,11 +17,11 @@ from setuptools import setup, find_packages
 setup(
     name="nord",
     version="1.0.0",
-    description="NoRD: No Reasoning for Driving — reasoning-free VLA for autonomous driving (CVPR 2026)",
+    description="NoRD: A Data-Efficient Vision-Language-Action Model that Drives without Reasoning (CVPR 2026)",
     long_description=open("README.md").read(),
     long_description_content_type="text/markdown",
     author="Ishaan Rawal, Shubh Gupta, Yihan Hu, Wei Zhan",
-    url="https://github.com/nord-vla-ai/nord",
+    url="https://github.com/Applied-Intuition-Open-Source/nord",
     packages=find_packages(include=["nord", "nord.*"]),
     package_data={"nord": ["data/vocab.pkl"]},
     python_requires=">=3.9",

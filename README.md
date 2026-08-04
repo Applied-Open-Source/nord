@@ -1,4 +1,4 @@
-# NoRD: No Reasoning for Driving
+# NoRD: A Data-Efficient Vision-Language-Action Model that Drives without Reasoning
 
 **CVPR 2026** | [arXiv](https://arxiv.org/abs/2602.21172) | [Project Page](https://nord-vla-ai.github.io/)
 
@@ -12,15 +12,13 @@ A reasoning-free Vision-Language-Action model for autonomous driving. NoRD predi
 
 | Model | Training | NAVSIM PDMS | HuggingFace |
 |---|---|---|---|
-| `nord` | SFT + Dr. GRPO | 0.8626 | `nord-vla-ai/nord` |
-| `nord-base` | SFT only | 0.7273 | `nord-vla-ai/nord-base` |
-
-Weights will be released at a later date.
+| `nord` | SFT + Dr. GRPO | 0.8626 | `AppliedIntuitionResearch/nord` |
+| `nord-base` | SFT only | 0.7273 | `AppliedIntuitionResearch/nord-base` |
 
 ## Install
 
 ```bash
-git clone https://github.com/nord-vla-ai/nord
+git clone https://github.com/Applied-Intuition-Open-Source/nord
 cd nord
 pip install -e ".[serve]"   # includes vllm + transformers
 ```
@@ -33,7 +31,7 @@ Start the vLLM server, then call the API.
 
 ```bash
 # Terminal 1
-vllm serve nord-vla-ai/nord --served-model-name qwen --dtype bfloat16 --port 8000
+vllm serve AppliedIntuitionResearch/nord --served-model-name qwen --dtype bfloat16 --port 8000
 ```
 
 ```python

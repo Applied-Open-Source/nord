@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-"""NoRD: No Reasoning for Driving — CVPR 2026 inference package."""
+"""NoRD: A Data-Efficient Vision-Language-Action Model that Drives without Reasoning — CVPR 2026 inference package."""
 
 from nord.agent import NordAgent, NordInput, NordOutput
 from nord.hub import list_models, download_model

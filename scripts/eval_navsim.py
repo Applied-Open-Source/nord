@@ -23,7 +23,7 @@ Prerequisites
    Download the navtest dataset and metric cache (see NAVSIM README).
 
 2. Start vLLM:
-       vllm serve nord-vla-ai/nord --served-model-name qwen --dtype bfloat16 --port 8000
+       vllm serve AppliedIntuitionResearch/nord --served-model-name qwen --dtype bfloat16 --port 8000
 
 3. Run this script:
        python scripts/eval_navsim.py \\
